@@ -14,7 +14,7 @@ var contacts = [
 	email: 'adam.kowalski@example.com',
 },
 {
-	id: 1,
+	id: 3,
 	firstName: 'Zbigniew',
 	lastName: 'Koziol',
 	email: 'zbigniew.koziol@example.com',
@@ -29,9 +29,11 @@ var contactForm = {
 
 var App = React.createClass({
 	render: function() {
+		return (
 		React.createElement('div', {className: 'app'},
 			React.createElement(ContactForm, {contact: contactForm}),
 			React.createElement(Contacts, {items: contacts}, {})
 			)
-	};
+		);
+	}
 });

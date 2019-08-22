@@ -1,0 +1,15 @@
+body { margin: 0 auto; background-color: #dec3c3; }
+
+.contactForm { margin-top: 100px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; height: 40px; }
+
+.contactForm input { text-align: center; }
+
+.contactForm button { background-color: #f9caa7; }
+
+.contactsList { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; }
+
+.contactsList .contactItem { text-align: center; margin: 20px 100px; padding: 20px; border: 2px solid #fff; background-color: #bbbbbb; }
+
+.contactsList .contactItem .contactImage { height: 200px; width: 200px; padding: 30px; }
+
+.contactsList .contactItem .contactLabel { text-align: center; }

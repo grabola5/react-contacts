@@ -1,0 +1,39 @@
+body {
+	margin: 0 auto;
+	background-color: #dec3c3;
+}
+.app {
+
+}
+.contactForm {
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	height: 40px;
+	input {
+		text-align: center;
+	}
+	button {
+		background-color: #f9caa7;
+	}
+}
+.contactsList {
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	.contactItem {
+		text-align: center;
+		margin: 20px 100px;
+		padding: 20px;
+		border: 2px solid #fff;
+		background-color: #bbbbbb;
+		.contactImage {
+			height: 200px;
+			width: 200px;
+			padding: 30px;
+		}
+		.contactLabel {
+			text-align: center;
+		}
+	}
+}

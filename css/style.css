@@ -1,15 +1,66 @@
-body { margin: 0 auto; background-color: #dec3c3; }
+body {
+  margin: 0 auto;
+  background-color: #dec3c3;
+}
 
-.contactForm { margin-top: 100px; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; height: 40px; }
+.contactForm {
+  display: inline-block;
+  height: 200px;
+  position: relative;
+  top: 30px;
+}
 
-.contactForm input { text-align: center; }
+.contactForm input {
+  padding: 10px;
+  margin: 10px 15%;
+  width: 50%;
+  height: 10px;
+  position: relative;
+}
 
-.contactForm button { background-color: #f9caa7; }
+.contactForm button {
+  background-color: #f9caa7;
+  float: right;
+  margin-right: 15%;
+  height: 30px;
+  width: 120px;
+  position: absolute;
+  top: 120px;
+}
 
-.contactsList { display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; }
+.contactsList {
+  position: relative;
+  top: 20px;
+}
 
-.contactsList .contactItem { text-align: center; margin: 20px 100px; padding: 20px; border: 2px solid #fff; background-color: #bbbbbb; }
+.contactsList .contactItem {
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #fff;
+  background-color: #aaaaaa;
+  height: 120px;
+  width: 70%;
+}
 
-.contactsList .contactItem .contactImage { height: 200px; width: 200px; padding: 30px; }
+.contactsList .contactItem .contactImage {
+  display: block;
+  height: 120px;
+  width: 120px;
+  padding: 0 20px;
+  float: left;
+}
 
-.contactsList .contactItem .contactLabel { text-align: center; }
+.contactsList .contactItem .contactLabel, .contactsList .contactItem .contactEmail {
+  display: block;
+  position: relative;
+  left: 15%;
+  color: white;
+  font-size: 16px;
+}
+
+.contactsList .contactItem .contactEmail {
+  text-decoration: none;
+  color: black;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,39 +1,63 @@
+$back: #dec3c3;
+$grey: 	#aaaaaa;
+$light-orange: #f9caa7;
+
 body {
 	margin: 0 auto;
-	background-color: #dec3c3;
-}
-.app {
-
+	background-color: $back;
 }
 .contactForm {
-	margin-top: 100px;
-	display: flex;
-	justify-content: center;
-	height: 40px;
+	display: inline-block;
+	height: 200px;
+	position: relative;
+	top: 30px;
 	input {
-		text-align: center;
+		padding: 10px;
+		margin: 10px 15%;
+		width: 50%;
+		height: 10px;
+		position: relative;
 	}
+	
 	button {
-		background-color: #f9caa7;
+		background-color: $light-orange;
+		float: right;
+		margin-right: 15%;
+		height: 30px;
+		width: 120px;
+		position: absolute;
+		top:120px;
 	}
 }
-.contactsList {
-	display: flex;
-	align-items: center;
-	justify-content: center; 
+.contactsList { 
+	position: relative;
+	top: 20px;
 	.contactItem {
-		text-align: center;
-		margin: 20px 100px;
+		margin: 20px auto;
 		padding: 20px;
 		border: 2px solid #fff;
-		background-color: #bbbbbb;
+		background-color: $grey;
+		height:120px;
+		width: 70%;
+
 		.contactImage {
-			height: 200px;
-			width: 200px;
-			padding: 30px;
+			display:block;
+			height: 120px;
+			width: 120px;
+			padding: 0 20px;
+			float: left;	
 		}
 		.contactLabel {
-			text-align: center;
+			display: block;
+			position: relative;
+			left: 15%;
+			color: white;
+			font-size: 16px;
+		}
+		.contactEmail {
+			@extend .contactLabel;
+			text-decoration: none;
+			color: black;
 		}
 	}
 }
